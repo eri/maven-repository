@@ -7,22 +7,22 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>lib-android</artifactId>
-  <name>IOIO-lib-android</name>
+  <artifactId>lib-accessory</artifactId>
+  <name>IOIO-lib-accessory</name>
   <packaging>apklib</packaging>
 
   <parent>
     <groupId>ioio</groupId>
     <artifactId>parent</artifactId>
     <version>1.0</version>
-    <relativePath>../../../../pom.xml</relativePath>
+    <relativePath>../../pom.xml</relativePath>
   </parent>
 
   <dependencies>
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>1.5_r4</version>
+      <version>2.3.3_r2</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -32,9 +32,20 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>10_r2</version>
+    </dependency>
+    <dependency>
       <groupId>ioio</groupId>
       <artifactId>library</artifactId>
       <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>ioio</groupId>
+      <artifactId>lib-android</artifactId>
+      <version>1.0</version>
+      <type>apklib</type>
     </dependency>
   </dependencies>
 
@@ -72,7 +83,7 @@
         <extensions>true</extensions>
         <configuration>
           <sdk>
-            <platform>3</platform>
+            <platform>10</platform>
           </sdk>
         </configuration>
       </plugin>
