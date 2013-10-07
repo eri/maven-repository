@@ -7,8 +7,8 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>lib-accessory</artifactId>
-  <name>IOIO-lib-accessory</name>
+  <artifactId>lib-bluetooth</artifactId>
+  <name>IOIO-lib-bluetooth</name>
   <packaging>apklib</packaging>
 
   <parent>
@@ -32,20 +32,9 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>10_r2</version>
-    </dependency>
-    <dependency>
       <groupId>ioio</groupId>
       <artifactId>library</artifactId>
       <version>1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>ioio</groupId>
-      <artifactId>lib-android</artifactId>
-      <version>1.0</version>
-      <type>apklib</type>
     </dependency>
   </dependencies>
 
@@ -83,7 +72,7 @@
         <extensions>true</extensions>
         <configuration>
           <sdk>
-            <platform>10</platform>
+            <platform>7</platform>
           </sdk>
         </configuration>
       </plugin>
